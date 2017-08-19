@@ -20,6 +20,6 @@ device.match(/nokia/i) ||
 device.match(/symbian/i) ||
 device.match(/HTC/i);
 
-if (flag) {
-	window.location = "m";
+if (!flag) {
+	window.location = "/";
 }

@@ -9,6 +9,8 @@
 	<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
 	<script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
 
+	<link rel="stylesheet" type="text/css" href="www/_css/menu.css">
+
 	<script type="text/javascript" src="index_script.js"></script>
 	<script type="text/javascript" src="index_module.js"></script>
 	<script type="text/javascript" src="index_config.js"></script>
@@ -16,7 +18,58 @@
 </head>
 <body>
 	<div ng-app="Lanani" ng-controller="indexController as vm">
-		<h1>{{vm.saludo}}</h1>
+		<div id="menu" class="container-fluid text-center">
+			<div class="row menu-thumb">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+							<i class="fa fa-facebook-square" aria-hidden="true"><i class="menu-thumb-text hidden-xs"> /lananitejidos</i></i>
+							<i class="fa fa-instagram" aria-hidden="true"><i class="menu-thumb-text hidden-xs"> #lananitejidos</i></i>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div id="menu-top" class="row menu">
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-right">
+					<div class="row">
+						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu-button" ng-click="">SOBRE LANANI</div>
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-2 pull-right menu-button" ng-click="">TIENDA</div>
+					</div>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img class="menu-logo" src="www/_img/logo.png">
+				</div>
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text-left">
+					<div class="row">
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-3 menu-button" ng-click="">EVENTOS</div>
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-3 menu-button" ng-click="">CONTACTENOS</div>
+					</div>
+				</div>
+			</div> <!-- menu-top -->
+
+
+			<div id="menu-scroll" class="row menu-lg-fx hidden-sm hidden-xs" hidden="true">
+				<div class="col-md-4 col-lg-5">
+					<div class="row">
+						<div class="col-lg-2"></div>
+						<div class="col-md-2 col-lg-2 menu-btn-l-fx" ng-click="vmApp.setNavBar('tienda');">TIENDA</div>
+						<div class="col-md-2 col-lg-2 menu-btn-l-fx" ng-click="vmApp.setNavBar('eventos');">EVENTOS</div>
+						<div class="col-md-5 col-lg-4 menu-btn-l-fx" ng-click="vmApp.setNavBar('sobre');">SOBRE LANANI</div>
+						<div class="col-md-2 col-lg-2 menu-btn-l-fx" ng-click="vmApp.setNavBar('contacto');">CONTACTENOS</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-2">
+					<img class="menu-logo-sm" src="www/_img/logo.png">
+				</div>
+				<div class="col-md-4 col-lg-5">
+					<div class="row">
+						<div class="col-md-offset-4 col-md-4 col-lg-offset-6 col-lg-2 menu-btn-r-fx">FACEBOOK</div>
+						<div class="col-md-4 col-lg-2 menu-btn-r-fx">INSTAGRAM</div>
+						<div class="col-lg-1"></div>
+					</div>
+				</div>
+			</div> <!-- menu-scroll -->
+
+		</div> <!-- menu -->
 	</div>
 </body>
 </html>

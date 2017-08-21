@@ -12,12 +12,14 @@
   color: #eee;
   cursor: pointer;
   font-weight: bold;
-  margin-top: 45px;
-  padding-bottom: 30px;
-  transition: width 2s;
+  margin-top: 5px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  transition-duration: 0.3s;
+  transition-property: margin-top;
 }
 .menu-button:hover {
-  border-bottom: 1px solid pink;
+  margin-top: 0px;
 }
 .menu-thumb {
   font-size: 20px;
@@ -28,4 +30,9 @@
   font-style: normal;
   font-size: 15px;
   font-weight: bold;
+}
+.left-opt{
+  position: relative;
+  float: left;
+  padding: 0px 18px 0px 18px;
 }

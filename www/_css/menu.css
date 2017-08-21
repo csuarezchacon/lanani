@@ -10,8 +10,14 @@
 }
 .menu-button {
   color: #eee;
-  margin-top: 45px;
+  cursor: pointer;
   font-weight: bold;
+  margin-top: 45px;
+  padding-bottom: 30px;
+  transition: width 2s;
+}
+.menu-button:hover {
+  border-bottom: 1px solid pink;
 }
 .menu-thumb {
   font-size: 20px;

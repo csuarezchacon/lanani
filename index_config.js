@@ -1,12 +1,11 @@
 (function (){
 	angular.module('Lanani').config(
 	['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/home');
 	$stateProvider
-		.state('/', {
-			parent: 'root',
-			templateUrl: 'index.html',
-			url: '/'
+		.state('home', {
+			url: '/home',
+			templateUrl: 'www/home.html'
 		})
 		.state('tienda', {
 			url: '/tienda',

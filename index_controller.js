@@ -1,6 +1,6 @@
 (function() {
-  angular.module('Lanani').controller('indexController', [function() {
-    var vm = this;
-    vm.saludo = 'DESKTOP!!!';
+	angular.module('Lanani').controller('indexController', ['$stateParams', function($stateParams) {
+	var vm = this;
+	vm.saludo = 'DESKTOP!!!';
   }]);
 })();

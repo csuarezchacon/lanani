@@ -21,5 +21,5 @@ device.match(/symbian/i) ||
 device.match(/HTC/i);
 
 if (!flag) {
-	window.location = "/";
+	//window.location = "/";
 }

@@ -1,0 +1,49 @@
+.md-size {
+	margin-top: 20px;
+	width: 240px;
+	height: 240px;
+}
+.gallery {
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 5px;
+	padding: 0px 1px 1px 1px;
+	text-align: center;
+}
+.gallery-photo {
+	position:relative;
+  height:280px;
+  width:240px;
+  margin:0 auto;
+}
+.gallery-photo img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.gallery-photo img.top:hover {
+  opacity:0;
+}
+.gallery-desc {
+	display: inline-block;
+	height:40px;
+	width: 250px;
+	margin-top: 8px;
+	z-index: 0;
+}
+.gallery-pay {
+	display: inline-block;
+	height:35px;
+	width: 250px;
+	z-index: 0;
+}
+.format-name {
+	color: #878787;
+	font-weight: bold;
+}
+.format-price {
+	color: #161616;
+	font-weight: bold;
+}

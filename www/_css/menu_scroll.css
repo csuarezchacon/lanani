@@ -1,0 +1,38 @@
+.menu_scroll {
+  background-color: #008592;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.45);
+  height: 110px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+}
+.menu_scroll-logo {
+  height: 100px;
+  margin-top: 5px;
+  width: 100px;
+}
+.menu_scroll-button {
+  cursor: pointer;
+  margin-top: 5px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  transition-duration: 0.3s;
+  transition-property: margin-top;
+}
+.menu_scroll-button:hover {
+  margin-top: 2px;
+}
+.menu_scroll-button-text {
+  color: #eeeeee;
+  border-bottom: 1.5px dashed transparent;
+  font-weight: bold;
+  height: 25px;
+  transition: 0.2s ease;
+  padding-bottom: 8px;
+}
+.menu_scroll-button:hover .menu_scroll-button-text {
+  border-bottom: 1.5px dashed #eeeeee;
+  padding-bottom: 2px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.45);
+}

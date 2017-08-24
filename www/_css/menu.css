@@ -3,39 +3,50 @@
   box-shadow: 1px 1px 10px rgba(0,0,0,0.45);
   height: 110px;
 }
-.menu-logo {
-  height: 100px;
-  margin-top: 5px;
-  width: 100px;
-}
+
 .menu-button {
   cursor: pointer;
   margin-top: 5px;
-  padding-top: 45px;
   padding-bottom: 45px;
+  padding-top: 45px;
   transition-duration: 0.3s;
   transition-property: margin-top;
 }
+
 .menu-button:hover {
   margin-top: 2px;
 }
-.menu-button-text {
-  color: #eeeeee;
-  border-bottom: 1.5px dashed transparent;
-  font-weight: bold;
-  height: 25px;
-  transition: 0.2s ease;
-  padding-bottom: 8px;
-}
+
 .menu-button:hover .menu-button-text {
   border-bottom: 1.5px dashed #eeeeee;
   padding-bottom: 2px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.45);
 }
+
+.menu-button-text {
+  color: #eeeeee;
+  border-bottom: 1.5px dashed transparent;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  height: 25px;
+  padding-bottom: 8px;
+  transition: 0.2s ease;
+}
+
+.menu-logo {
+  cursor: pointer;
+  height: 100px;
+  margin-top: 5px;
+  width: 100px;
+}
+
 .menu-thumb {
   font-size: 20px;
   font-weight: bold;
 }
+
 .menu-thumb-text {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 15px;

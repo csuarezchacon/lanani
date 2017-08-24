@@ -1,27 +1,29 @@
 body{
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
+
 #body-scroll::-webkit-scrollbar {
+  background-color: #F5F5F5;
 	width: 10px;
-	background-color: #F5F5F5;
-}
-#body-scroll::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: rgba(0,0,0,0.1);
-  border: 1px solid #ccc;
 }
 
 #body-scroll::-webkit-scrollbar-thumb {
-  border-radius: 10px;
   background: linear-gradient(left, #fff, #e4e4e4);
   border: 1px solid #aaa;
+  border-radius: 10px;
+}
+
+#body-scroll::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(left, #22ADD4, #1E98BA);
 }
 
 #body-scroll::-webkit-scrollbar-thumb:hover {
   background: #fff;
 }
 
-#body-scroll::-webkit-scrollbar-thumb:active {
-  background: linear-gradient(left, #22ADD4, #1E98BA);
+#body-scroll::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }

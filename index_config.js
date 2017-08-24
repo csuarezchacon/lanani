@@ -2,35 +2,35 @@
 	angular.module('Lanani').config(
 	['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
 	$urlRouterProvider.otherwise('/home');
-	
+
 	$stateProvider
 		.state('home', {
 			url: '/home',
-			templateUrl: 'www/home/home.html',
+			templateUrl: 'www/pages/home/home.html',
 			controller: 'homeController',
 			controllerAs: 'vmHome'
 		})
 		.state('tienda', {
 			url: '/tienda',
-			templateUrl: 'www/tienda/tienda.html',
+			templateUrl: 'www/pages/tienda/tienda.html',
 			controller: 'tiendaController',
 			controllerAs: 'vmTienda'
 		})
 		.state('sobre', {
 			url: '/sobre',
-			templateUrl: 'www/sobre/sobre.html',
+			templateUrl: 'www/pages/sobre/sobre.html',
 			controller: 'sobreController',
 			controllerAs: 'vmSobre'
 		})
 		.state('eventos', {
 			url: '/eventos',
-			templateUrl: 'www/eventos/eventos.html',
+			templateUrl: 'www/pages/eventos/eventos.html',
 			controller: 'eventosController',
 			controllerAs: 'vmEventos'
 		})
 		.state('contacto', {
 			url: '/contacto',
-			templateUrl: 'www/contacto/contacto.html',
+			templateUrl: 'www/pages/contacto/contacto.html',
 			controller: 'contactoController',
 			controllerAs: 'vmContacto'
 		});

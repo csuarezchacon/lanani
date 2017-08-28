@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var posAct = 400, posNew = 0;
+	var posAct = 180, posNew = 0;
 
 	$(window).scroll(function () {
 		posNew = $(this).scrollTop();

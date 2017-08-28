@@ -1,7 +1,7 @@
 .menu_scroll {
   background-color: #008592;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.45);
-  height: 110px;
+  height: 70px;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -11,8 +11,8 @@
 .menu_scroll-button {
   cursor: pointer;
   margin-top: 5px;
-  padding-bottom: 45px;
-  padding-top: 45px;
+  padding-bottom: 25px;
+  padding-top: 25px;
   transition-duration: 0.3s;
   transition-property: margin-top;
 }
@@ -40,7 +40,7 @@
 }
 
 .menu_scroll-logo {
-  height: 100px;
+  height: 80px;
   margin-top: 5px;
-  width: 100px;
+  width: 80px;
 }

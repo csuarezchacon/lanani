@@ -1,7 +1,7 @@
 .menu_scroll {
   background-color: #008592;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.45);
-  height: 70px;
+  height: 50px;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -11,8 +11,8 @@
 .menu_scroll-button {
   cursor: pointer;
   margin-top: 5px;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   transition-duration: 0.3s;
   transition-property: margin-top;
 }
@@ -23,6 +23,7 @@
 
 .menu_scroll-button:hover .menu_scroll-button-text {
   border-bottom: 1.5px dashed #eeeeee;
+  color: #f2f2f2;
   padding-bottom: 2px;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.45);
 }
@@ -40,7 +41,7 @@
 }
 
 .menu_scroll-logo {
-  height: 80px;
+  height: 65px;
   margin-top: 5px;
-  width: 80px;
+  width: 65px;
 }

@@ -1,13 +1,15 @@
 $(document).ready(function() {
-	var posAct = 180, posNew = 0;
+	var posTopAct = 180,
+			posTopNew = 0;
 
+	//scroll de menu superior
 	$(window).scroll(function () {
-		posNew = $(this).scrollTop();
+		posTopNew = $(this).scrollTop();
 
-		if (posNew <= posAct) {
-			$('#menu-scroll').fadeOut(100);
+		if (posTopNew <= posTopAct) {
+			$("#menu-scroll").fadeOut(100);
 		} else {
-			$('#menu-scroll').fadeIn(100);
+			$("#menu-scroll").fadeIn(100);
 		}
 	});
 });

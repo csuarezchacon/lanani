@@ -45,3 +45,12 @@
   margin-top: 5px;
   width: 65px;
 }
+
+.menu-scroll-xs {
+  color: #dddddd;
+  cursor: pointer;
+  font-size: 28px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  padding-top: 12px;
+}

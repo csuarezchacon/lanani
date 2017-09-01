@@ -53,3 +53,13 @@
   font-style: normal;
   font-weight: bold;
 }
+
+.menu-xs {
+  color: #dddddd;
+  cursor: pointer;
+  font-size: 28px;
+  margin-top: 0px;
+  padding-bottom: 41px;
+  padding-left: 30px;
+  padding-top: 42px;
+}

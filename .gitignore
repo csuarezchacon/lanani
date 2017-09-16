@@ -1,2 +1,2 @@
-vendor
-model/config/conn.php
+/vendor
+/model/config/conn.php

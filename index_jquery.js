@@ -7,9 +7,9 @@ $(document).ready(function() {
 		posTopNew = $(this).scrollTop();
 
 		if (posTopNew <= posTopAct) {
-			$("#menu-scroll").fadeOut(100);
+			$("#menu_scroll").fadeOut(100);
 		} else {
-			$("#menu-scroll").fadeIn(100);
+			$("#menu_scroll").fadeIn(100);
 		}
 	});
 });

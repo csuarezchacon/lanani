@@ -19,10 +19,10 @@
       $product_item = array(
         "id" => $prod_id,
         "name" => $prod_name,
-        "description" => $prod_description,
+        "description_sm" => $prod_description_sm,
         "price" => $prod_price,
-        "imag_src" => $prod_imag_src,
-        "imag_bkg" => $prod_imag_bkg
+        "url_image_principal" => $prod_url_image_principal,
+        "url_image_secondary" => $prod_url_image_secondary
       );
 
       array_push($product_arr["productList"], $product_item);

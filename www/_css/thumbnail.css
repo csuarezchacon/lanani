@@ -19,6 +19,7 @@
 }
 
 .gallery-pay {
+	cursor: pointer;
 	display: inline-block;
 	height:35px;
 	width: 250px;
@@ -33,6 +34,7 @@
 }
 
 .gallery-photo img {
+	border-radius: 4px;
 	left:0;
   position:absolute;
 	transition: opacity 0.2s ease-in-out;
@@ -43,6 +45,7 @@
 
 .gallery-photo img.top:hover {
   opacity:0;
+	cursor: pointer;
 }
 
 .format-price {
@@ -52,6 +55,7 @@
 
 .md-size {
 	height: 255px;
-	margin-top: 20px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 	width: 255px;
 }

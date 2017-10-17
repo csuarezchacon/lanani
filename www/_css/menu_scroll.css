@@ -1,5 +1,5 @@
 .menu_scroll {
-  background-color: #008592;
+  background-color: #f9f9f9;/*#008592;*/
   box-shadow: 1px 1px 10px rgba(0,0,0,0.45);
   height: 50px;
   position: fixed;
@@ -22,14 +22,13 @@
 }
 
 .menu_scroll-button:hover .menu_scroll-button-text {
-  border-bottom: 1.5px dashed #eeeeee;
-  color: #f2f2f2;
+  border-bottom: 1.5px dashed #555555;
   padding-bottom: 2px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.45);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
 .menu_scroll-button-text {
-  color: #eeeeee;
+  color: #555555;
   border-bottom: 1.5px dashed transparent;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;

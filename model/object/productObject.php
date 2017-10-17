@@ -5,21 +5,18 @@
 
 		public $id;
 		public $name;
-		public $description;
+		public $description_sm;
 		public $price;
-		public $imag_src;
-		public $imag_bkg;
+		public $url_image_principal;
+		public $url_image_secondary;
 
 		public function __construct($db) {
 			$this->conn = $db;
 		}
 
 		function read_all(){
-			/*$query = "
-				SELECT p.prod_id, p.prod_name, p.prod_description, p.prod_price " .
-				"FROM " . $this->tableName . " p ";*/
 
-			$query = "select p.prod_id, p.prod_name, p.prod_description, p.prod_price, p.prod_imag_src, p.prod_imag_bkg " .
+			$query = "select p.prod_id, p.prod_name, p.prod_description_sm, p.prod_price, p.prod_url_image_principal, p.prod_url_image_secondary " .
 				"from " . $this->tableName . " p";
 
 			$stmt = $this->conn->prepare($query);

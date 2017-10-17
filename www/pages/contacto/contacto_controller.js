@@ -1,6 +1,7 @@
 (function() {
-	angular.module('Lanani').controller('contactoController', [function() {
+	angular.module('Lanani').controller('contactoController', ['$state', function($state) {
 	var vm = this;
+	vm.path = $state.router.urlRouter.location;
 	validaScroll(); //está en footer_jquery.js
   }]);
 })();

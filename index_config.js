@@ -4,35 +4,62 @@
 	$urlRouterProvider.otherwise('/home');
 
 	$stateProvider
-		.state('home', {
-			url: '/home',
-			templateUrl: 'www/pages/home/home.html',
+		.state('main', {
+			url: '/',
+			controller: 'indexController',
+			controllerAs: 'vm',
+			ncyBreadcrumb: {
+				label: ' '
+			}
+		})
+		.state('main.home', {
+			url: 'home',
 			controller: 'homeController',
-			controllerAs: 'vmHome'
+			controllerAs: 'vmHome',
+			ncyBreadcrumb: {
+				label: 'Home',
+				parent: 'main'
+			},
+			templateUrl: 'www/pages/home/home.html'
 		})
-		.state('tienda', {
-			url: '/tienda',
-			templateUrl: 'www/pages/tienda/tienda.html',
+		.state('main.tienda', {
+			url: 'tienda',
 			controller: 'tiendaController',
-			controllerAs: 'vmTienda'
+			controllerAs: 'vmTienda',
+			ncyBreadcrumb: {
+				label: 'Tienda',
+				parent: 'main'
+			},
+			templateUrl: 'www/pages/tienda/tienda.html'
 		})
-		.state('sobre', {
-			url: '/sobre',
-			templateUrl: 'www/pages/sobre/sobre.html',
+		.state('main.sobre', {
+			url: 'sobre',
 			controller: 'sobreController',
-			controllerAs: 'vmSobre'
+			controllerAs: 'vmSobre',
+			ncyBreadcrumb: {
+				label: 'Sobre',
+				parent: 'main'
+			},
+			templateUrl: 'www/pages/sobre/sobre.html'
 		})
-		.state('eventos', {
-			url: '/eventos',
-			templateUrl: 'www/pages/eventos/eventos.html',
+		.state('main.eventos', {
+			url: 'eventos',
 			controller: 'eventosController',
-			controllerAs: 'vmEventos'
+			controllerAs: 'vmEventos',
+			ncyBreadcrumb: {
+				label: 'Eventos',
+				parent: 'main'
+			},
+			templateUrl: 'www/pages/eventos/eventos.html'
 		})
-		.state('contacto', {
-			url: '/contacto',
-			templateUrl: 'www/pages/contacto/contacto.html',
+		.state('main.contacto', {
+			url: 'contacto',
 			controller: 'contactoController',
-			controllerAs: 'vmContacto'
+			controllerAs: 'vmContacto',
+			ncyBreadcrumb: {
+				label: 'Contacto'
+			},
+			templateUrl: 'www/pages/contacto/contacto.html'
 		});
 }]);
 })();

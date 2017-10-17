@@ -1,3 +1,5 @@
 (function() {
-  angular.module('Lanani', ['ui.router']);
+  angular.module('Lanani', [
+    'ui.router',
+    'ncy-angular-breadcrumb']);
 })();

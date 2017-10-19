@@ -1,0 +1,31 @@
+imagen
+  imag_id
+  imag_url
+  imag_orden
+  prod_id
+
+producto
+  prod_id
+  prod_nombre
+  prod_url_imagen_principal
+  prod_url_imagen_secundaria
+  prod_descripcion_corta
+  prod_descripcion_larga
+  prod_fecha_registro
+  prod_precio
+  prod_cantidad
+  esta_id
+  tipr_id
+
+estado
+  esta_id
+  esta_nombre
+  ties_id
+
+tipo_estado
+  ties_id
+  ties_nombre
+
+tipo_producto
+  tipr_id
+  tipr_nombre

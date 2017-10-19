@@ -1,6 +1,6 @@
 .menu {
-  background-color: #f9f9f9;/*#008592;*/
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.45);
+  background-color: #6b638c;/*#f9f9f9*/ /*#008592;*/ /*#b1daca*/ /*#a9d5c4*/
+  box-shadow: 1px 4px 8px rgba(0,0,0,0.35);
   height: 110px;
   position: absolute;
   top: 35px;
@@ -10,25 +10,30 @@
 
 .menu-button {
   cursor: pointer;
+  height: 107px;
   margin-top: 5px;
   padding-bottom: 45px;
   padding-top: 45px;
+  text-align: center;
   transition-duration: 0.3s;
-  transition-property: margin-top;
+  transition-property: background-color, height, margin-top;
 }
 
 .menu-button:hover {
-  margin-top: 2px;
+  height: 110px;
+  margin-top: 0px;
+  background-color: #645b8a;
 }
 
 .menu-button:hover .menu-button-text {
-  border-bottom: 1.5px dashed #555555;
+  /*border-bottom: 1.5px dashed #eeeeee;*/
+  color: #eeeeee;
   padding-bottom: 2px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
 }
 
 .menu-button-text {
-  color: #555555;
+  color: #eeeeee;
   border-bottom: 1.5px dashed transparent;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -59,11 +64,12 @@
 }
 
 .menu-xs {
-  color: #555555;
+  color: #eeeeee;
   cursor: pointer;
   font-size: 28px;
   margin-top: 0px;
   padding-bottom: 41px;
+  padding-right: 30px;
   padding-left: 30px;
   padding-top: 42px;
 }

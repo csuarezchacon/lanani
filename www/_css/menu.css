@@ -22,7 +22,7 @@
 .menu-button:hover {
   height: 110px;
   margin-top: 0px;
-  background-color: #645b8a;
+  background-color: #574d80;/*#645b8a;*/
 }
 
 .menu-button:hover .menu-button-text {
@@ -45,10 +45,13 @@
 }
 
 .menu-logo {
-  cursor: pointer;
   height: 100px;
   margin-top: 5px;
   width: 100px;
+}
+
+.menu-logo-button {
+  cursor: pointer;
 }
 
 .menu-thumb {

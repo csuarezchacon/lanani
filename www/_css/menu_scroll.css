@@ -46,10 +46,13 @@
 }
 
 .menu_scroll-logo {
-  cursor: pointer;
   height: 65px;
   margin-top: 5px;
   width: 65px;
+}
+
+.menu_scroll-logo-button {
+  cursor: pointer;
 }
 
 .menu_scroll-xs {

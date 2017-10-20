@@ -22,44 +22,54 @@
 			},
 			templateUrl: 'www/pages/home/home.html'
 		})
-		.state('main.tienda', {
-			url: 'tienda',
-			controller: 'tiendaController',
-			controllerAs: 'vmTienda',
+		.state('main.store', {
+			url: 'store',
+			controller: 'storeController',
+			controllerAs: 'vmStore',
 			ncyBreadcrumb: {
 				label: 'Tienda',
 				parent: 'main'
 			},
-			templateUrl: 'www/pages/tienda/tienda.html'
+			templateUrl: 'www/pages/store/store.html'
 		})
-		.state('main.sobre', {
-			url: 'sobre',
-			controller: 'sobreController',
-			controllerAs: 'vmSobre',
+		.state('main.store.productdetail', {
+			url: '/product-detail',
+			controller: 'productDetailController',
+			controllerAs: 'vmProductDetail',
+			ncyBreadcrumb: {
+				label: 'Detalle Producto',
+				parent: 'main.store'
+			},
+			templateUrl: 'www/pages/product-detail/product-detail.html'
+		})
+		.state('main.about', {
+			url: 'about',
+			controller: 'aboutController',
+			controllerAs: 'vmAbout',
 			ncyBreadcrumb: {
 				label: 'Sobre',
 				parent: 'main'
 			},
-			templateUrl: 'www/pages/sobre/sobre.html'
+			templateUrl: 'www/pages/about/about.html'
 		})
-		.state('main.eventos', {
-			url: 'eventos',
-			controller: 'eventosController',
-			controllerAs: 'vmEventos',
+		.state('main.fair', {
+			url: 'fair',
+			controller: 'fairController',
+			controllerAs: 'vmFair',
 			ncyBreadcrumb: {
 				label: 'Eventos',
 				parent: 'main'
 			},
-			templateUrl: 'www/pages/eventos/eventos.html'
+			templateUrl: 'www/pages/fair/fair.html'
 		})
-		.state('main.contacto', {
-			url: 'contacto',
-			controller: 'contactoController',
-			controllerAs: 'vmContacto',
+		.state('main.contact', {
+			url: 'contact',
+			controller: 'contactController',
+			controllerAs: 'vmContact',
 			ncyBreadcrumb: {
 				label: 'Contacto'
 			},
-			templateUrl: 'www/pages/contacto/contacto.html'
+			templateUrl: 'www/pages/contact/contact.html'
 		});
 }]);
 })();

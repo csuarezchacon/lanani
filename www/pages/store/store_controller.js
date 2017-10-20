@@ -1,5 +1,5 @@
 (function() {
-	angular.module('Lanani').controller('tiendaController', ['$http', 'URL', function($http, URL) {
+	angular.module('Lanani').controller('storeController', ['$http', 'URL', function($http, URL) {
 		var vm = this;
 		vm.productList = [];
 		$http.post(URL + "/query/product-read-all.php").then(function (rs) {

@@ -30,13 +30,13 @@
 	<script type="text/javascript" src="www/pages/home/home_controller.js"></script>
 	<script type="text/javascript" src="www/pages/home/home_factory.js"></script>
 
-	<script type="text/javascript" src="www/pages/tienda/tienda_controller.js"></script>
-	<script type="text/javascript" src="www/pages/sobre/sobre_controller.js"></script>
-	<script type="text/javascript" src="www/pages/eventos/eventos_controller.js"></script>
-	<script type="text/javascript" src="www/pages/contacto/contacto_controller.js"></script>
+	<script type="text/javascript" src="www/pages/store/store_controller.js"></script>
+	<script type="text/javascript" src="www/pages/about/about_controller.js"></script>
+	<script type="text/javascript" src="www/pages/fair/fair_controller.js"></script>
+	<script type="text/javascript" src="www/pages/contact/contact_controller.js"></script>
 
-	<script type="text/javascript" src="www/directives/product/product-slight_directive.js"></script>
-	<script type="text/javascript" src="www/directives/product/product-slight_controller.js"></script>
+	<script type="text/javascript" src="www/directives/product-thumb/product-thumb_directive.js"></script>
+	<script type="text/javascript" src="www/directives/product-thumb/product-thumb_controller.js"></script>
 
 </head>
 <body>
@@ -56,18 +56,18 @@
 			<div id="menu-top" class="row menu">
 				<div class="col-xs-2 col-sm-5 col-md-5 col-lg-5 text-right">
 					<div class="row">
-						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu-button" ui-sref="main.sobre">
+						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu-button" ui-sref="main.about">
 							<span class="menu-button-text">SOBRE LANANI</span>
 						</div>
-						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu-button" ui-sref="main.tienda">
+						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu-button" ui-sref="main.store">
 							<span class="menu-button-text">TIENDA VIRTUAL</span>
 						</div>
 
 						<div class="hidden-xs hidden-md hidden-lg col-sm-1 text-center"></div>
-						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu-button" ui-sref="main.tienda">
+						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu-button" ui-sref="main.store">
 							<span class="menu-button-text">TIENDA VIRTUAL</span>
 						</div>
-						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu-button" ui-sref="main.sobre">
+						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu-button" ui-sref="main.about">
 							<span class="menu-button-text">SOBRE LANANI</span>
 						</div>
 
@@ -81,17 +81,17 @@
 				</div>
 				<div class="col-xs-2 col-sm-5 col-md-5 col-lg-5 text-left">
 					<div class="row">
-						<div class="hidden-xs hidden-sm col-md-3 col-lg-4 menu-button" ui-sref="main.eventos">
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-4 menu-button" ui-sref="main.fair">
 							<span class="menu-button-text">EVENTOS</span>
 						</div>
-						<div class="hidden-xs hidden-sm col-md-3 col-lg-4 menu-button" ui-sref="main.contacto">
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-4 menu-button" ui-sref="main.contact">
 							<span class="menu-button-text">CONTACTENOS</span>
 						</div>
 
-						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu-button" ui-sref="main.eventos">
+						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu-button" ui-sref="main.fair">
 							<span class="menu-button-text">EVENTOS</span>
 						</div>
-						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu-button" ui-sref="main.contacto">
+						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu-button" ui-sref="main.contact">
 							<span class="menu-button-text">CONTACTENOS</span>
 						</div>
 						<div class="hidden-xs hidden-md hidden-lg col-sm-1 text-center menu-button"></div>
@@ -102,18 +102,18 @@
 			<div id="menu_scroll" class="row menu_scroll" hidden="true">
 				<div class="col-xs-2 col-sm-5 col-md-5 col-lg-5 text-right">
 					<div class="row">
-						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu_scroll-button" ui-sref="main.sobre">
+						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu_scroll-button" ui-sref="main.about">
 							<span class="menu_scroll-button-text">SOBRE LANANI</span>
 						</div>
-						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu_scroll-button" ui-sref="main.tienda">
+						<div class="hidden-xs hidden-sm col-md-4 col-lg-4 pull-right menu_scroll-button" ui-sref="main.store">
 							<span class="menu_scroll-button-text">TIENDA VIRTUAL</span>
 						</div>
 
 						<div class="hidden-xs hidden-md hidden-lg col-sm-1 text-center"></div>
-						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu_scroll-button" ui-sref="main.tienda">
+						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu_scroll-button" ui-sref="main.store">
 							<span class="menu_scroll-button-text">TIENDA VIRTUAL</span>
 						</div>
-						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu_scroll-button" ui-sref="main.sobre">
+						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu_scroll-button" ui-sref="main.about">
 							<span class="menu_scroll-button-text">SOBRE LANANI</span>
 						</div>
 
@@ -127,17 +127,17 @@
 				</div>
 				<div class="col-xs-2 col-sm-5 col-md-5 col-lg-5 text-left">
 					<div class="row">
-						<div class="hidden-xs hidden-sm col-md-3 col-lg-4 menu_scroll-button" ui-sref="main.eventos">
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-4 menu_scroll-button" ui-sref="main.fair">
 							<span class="menu_scroll-button-text">EVENTOS</span>
 						</div>
-						<div class="hidden-xs hidden-sm col-md-3 col-lg-4 menu_scroll-button" ui-sref="main.contacto">
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-4 menu_scroll-button" ui-sref="main.contact">
 							<span class="menu_scroll-button-text">CONTACTENOS</span>
 						</div>
 
-						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu_scroll-button" ui-sref="main.eventos">
+						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu_scroll-button" ui-sref="main.fair">
 							<span class="menu_scroll-button-text">EVENTOS</span>
 						</div>
-						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu_scroll-button" ui-sref="main.contacto">
+						<div class="hidden-xs hidden-md hidden-lg col-sm-5 text-center menu_scroll-button" ui-sref="main.contact">
 							<span class="menu_scroll-button-text">CONTACTENOS</span>
 						</div>
 						<div class="hidden-xs hidden-md hidden-lg col-sm-1 text-center menu_scroll-button"></div>

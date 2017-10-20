@@ -1,8 +1,11 @@
 <div class="container-fluid">
-  <div class="row">
+	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div ng-repeat="prod in vmStore.productList">
+				<product-thumb-directive product="prod"></product-thumb-directive>
+			</div>
 		</div>
-  </div>
+	</div>
 </div>
 <div class="footer-hidden"></div>
 

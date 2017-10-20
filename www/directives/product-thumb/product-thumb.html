@@ -1,0 +1,21 @@
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 gallery">
+	<div class="row" ui-sref="main.store.productdetail">
+		<div class="gallery-photo">
+			<img ng-src="{{ptc.product.url_image_secondary ? '_img/' + ptc.product.url_image_secondary : (ptc.product.url_image_principal ? '_img/' + ptc.product.url_image_principal : '_img/blank.png')}}" class="bottom md-size">
+			<img ng-src="{{ptc.product.url_image_principal ? '_img/' + ptc.product.url_image_principal : '_img/blank.png'}}" class="top md-size">
+		</div>
+	</div>
+	<div class="row">
+		<div class="gallery-desc">
+			<div class="row">
+				<div class="col-lg-7 format-name text-left">{{ptc.product.name}}</div>
+				<div class="col-lg-5 format-price text-right">{{ptc.product.price | currency: 'CLP ' : 0}}</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="gallery-pay text-right">
+			Agregar al Carro <br>
+		</div>
+	</div>
+</div>

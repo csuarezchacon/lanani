@@ -4,66 +4,54 @@
 	$urlRouterProvider.otherwise('/home');
 
 	$stateProvider
-		.state('main', {
-			url: '/',
-			controller: 'indexController',
-			controllerAs: 'vm',
-			ncyBreadcrumb: {
-				label: ' '
-			}
-		})
-		.state('main.home', {
-			url: 'home',
+		.state('home', {
+			url: '/home',
 			controller: 'homeController',
 			controllerAs: 'vmHome',
 			ncyBreadcrumb: {
-				label: 'Home',
-				parent: 'main'
+				label: 'Home'
 			},
 			templateUrl: 'www/pages/home/home.html'
 		})
-		.state('main.store', {
-			url: 'store',
+		.state('store', {
+			url: '/tienda',
 			controller: 'storeController',
 			controllerAs: 'vmStore',
 			ncyBreadcrumb: {
-				label: 'Tienda',
-				parent: 'main'
+				label: 'Tienda'
 			},
 			templateUrl: 'www/pages/store/store.html'
 		})
-		.state('main.store.productdetail', {
-			url: '/product-detail',
+		.state('product-detail', {
+			url: '/tienda/detalle-producto',
 			controller: 'productDetailController',
 			controllerAs: 'vmProductDetail',
 			ncyBreadcrumb: {
 				label: 'Detalle Producto',
-				parent: 'main.store'
+				parent: 'store'
 			},
 			templateUrl: 'www/pages/product-detail/product-detail.html'
 		})
-		.state('main.about', {
-			url: 'about',
+		.state('about', {
+			url: '/sobre',
 			controller: 'aboutController',
 			controllerAs: 'vmAbout',
 			ncyBreadcrumb: {
-				label: 'Sobre',
-				parent: 'main'
+				label: 'Sobre'
 			},
 			templateUrl: 'www/pages/about/about.html'
 		})
-		.state('main.fair', {
-			url: 'fair',
+		.state('fair', {
+			url: '/evento',
 			controller: 'fairController',
 			controllerAs: 'vmFair',
 			ncyBreadcrumb: {
-				label: 'Eventos',
-				parent: 'main'
+				label: 'Eventos'
 			},
 			templateUrl: 'www/pages/fair/fair.html'
 		})
-		.state('main.contact', {
-			url: 'contact',
+		.state('contact', {
+			url: '/contacto',
 			controller: 'contactController',
 			controllerAs: 'vmContact',
 			ncyBreadcrumb: {

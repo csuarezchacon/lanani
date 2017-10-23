@@ -5,9 +5,11 @@
   include_once '../model/config/conn.php';
   include_once '../model/object/productObject.php';
 
+  $cant = $_GET['cantProd'];
+
   $database = new Database();$db = $database->getConnection();
   $product = new Product($db);
-  $stmt = $product->read_all();
+  $stmt = $product->read_top_x($cant);
   $num = $stmt->rowCount();
 
   if ($num>0) {

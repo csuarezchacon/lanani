@@ -23,7 +23,7 @@
 			templateUrl: 'www/pages/store/store.html'
 		})
 		.state('product-detail', {
-			url: '/tienda/detalle-producto',
+			url: '/tienda/detalle-producto/:id',
 			controller: 'productDetailController',
 			controllerAs: 'vmProductDetail',
 			ncyBreadcrumb: {

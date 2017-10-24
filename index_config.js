@@ -30,6 +30,11 @@
 				label: 'Detalle Producto',
 				parent: 'store'
 			},
+			resolve: {
+				resolveData: ['$stateParams', function($stateParams) {
+					return $stateParams.id;
+				}]
+			},
 			templateUrl: 'www/pages/product-detail/product-detail.html'
 		})
 		.state('about', {

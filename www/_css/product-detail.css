@@ -1,0 +1,13 @@
+.pd-active-image {
+  background-color: red;
+  border-radius: 3px;
+  height: 400px;
+  width: 400px;
+}
+
+.pd-thumbnail {
+  background-color: green;
+  border-radius: 3px;
+  height: 400px;
+  width: 100px;
+}

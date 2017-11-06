@@ -9,8 +9,20 @@
   $stmt = $product->read_detail($id);
   $num = $stmt->rowCount();
   if ($num>0) {
-    http_response_code(200);
-    echo json_encode("entró a select");
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+      extract($row);
+      $product_item = array(
+        "date" => $prod_date,
+        "description_lg" => $prod_description_lg,
+        "description_sm" => $prod_description_sm,
+        "name" => $prod_name,
+        "price" => $prod_price,
+        "stock" => $prod_stock,
+        "url_image_principal" => $prod_url_image_principal,
+        "url_image_secondary" => $prod_url_image_secondary
+      );
+    }
+    echo json_encode($product_item);
   } else {
     http_response_code(404);
     echo json_encode(array("message" => "No products found."));

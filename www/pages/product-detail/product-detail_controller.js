@@ -4,9 +4,11 @@
 
     vm.id = resolveData;
     vm.productExist = true;
+    vm.product = ""
 
     $http.post(URL + "/query/product-read-detail.php?id=" + vm.id).then(function (rs) {
       vm.productExist = true;
+      vm.product = rs.data;
 		}, function (err) {
       vm.productExist = false;
 		});

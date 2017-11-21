@@ -5,9 +5,12 @@
   include_once '../model/object/productObject.php';
   $id = $_GET['id'];
   $database = new Database();$db = $database->getConnection();
+
   $product = new Product($db);
+
   $stmt = $product->read_detail($id);
   $num = $stmt->rowCount();
+
   if ($num>0) {
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       extract($row);
@@ -22,6 +25,7 @@
         "url_image_secondary" => $prod_url_image_secondary
       );
     }
+
     echo json_encode($product_item);
   } else {
     http_response_code(404);

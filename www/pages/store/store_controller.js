@@ -7,7 +7,6 @@
 			vm.productList = rs.data.productList;
 			 validaScroll(); //está en footer_jquery.js
 		}, function (err) {
-			alert(err);
 			vm.productList = [];
 		});
   }]);

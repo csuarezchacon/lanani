@@ -35,7 +35,7 @@
 
 		function read_detail($id){
 			$query = "select" .
-				"p.prod_date, p.prod_description_lg, p.prod_description_sm, p.prod_name, p.prod_price, p.prod_stock, i.imag_url prod_url_image_principal, ii.imag_url prod_url_image_secondary " .
+				" p.prod_date, p.prod_description_lg, p.prod_description_sm, p.prod_name, p.prod_price, p.prod_stock, i.imag_url prod_url_image_principal, ii.imag_url prod_url_image_secondary " .
 				" from" .
 				" " . $this->tableName . " p " .
 				" join image i on p.prod_image_principal = i.imag_id" .

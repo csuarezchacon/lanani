@@ -12,17 +12,19 @@
         </div>
         <div class="row">
           <div class="col-lg-2 hidden-md hidden-sm hidden-xs pd-thumb-v">
-            thumb v
+            <div class="thumbnail" ng-style="{'background-image': 'url(_img/{{image.url}})'}" ng-repeat="image in vmProductDetail.thumbList" ng-click="vmProductDetail.selectImage(image)">
+            </div>
           </div>
           <div class="col-lg-10 pd-image-area">
             <div>
-              <img class="pd-image-active" ng-src="{{vmProductDetail.product.activeImg}}">
+              <img class="pd-image-active" ng-src="{{vmProductDetail.activeImage}}">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 hidden-lg pd-thumb-h">
-            thumb h
+            <div class="thumbnail" ng-style="{'background-image': 'url(_img/{{image.url}})'}" ng-repeat="image in vmProductDetail.thumbList" ng-click="vmProductDetail.selectImage(image)">
+            </div>
           </div>
         </div>
       </div>

@@ -59,3 +59,9 @@
 	margin-bottom: 20px;
 	width: 255px;
 }
+
+.thumbnail {
+	background-size: 95px 95px;
+	height: 95px;
+	margin-bottom: 2px;
+}

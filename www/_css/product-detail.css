@@ -1,27 +1,23 @@
 .pd-gallery {
-  background-color: lightgrey;
 }
 
 .pd-description {
-  background-color: lightblue;
 }
 
 .pd-thumb-v {
-  background-color: lightgreen;
   height: 420px;
   padding: 0px;
   width: 95px;
 }
 
 .pd-thumb-h {
-  background-color: lightgreen;
+  display: inline-block;
   margin-top: 15px;
   height: 95px;
   padding: 0px;
 }
 
 .pd-image-area {
-  background-color: lightyellow;
   text-align: center;
 }
 
@@ -33,8 +29,7 @@
 }
 
 .pd-title {
-  background-color: purple;
-  color: white;
+  color: red;
 }
 
 .image-active {
